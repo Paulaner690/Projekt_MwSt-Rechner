@@ -1,0 +1,68 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    background: url(../kelly-sikkema-M98NRBuzbpc-unsplash.jpg) no-repeat center;
+
+}
+
+article{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: rgba(205, 201, 201, 0.863);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+
+.h1-background{
+    border-radius: 10px;
+    background-color: rgba(205, 201, 201, 0.863);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+}
+
+p{
+    color: rgb(144, 76, 9);
+    font-weight: 700;
+}
+
+span{
+    color: red;
+}
+
+input{
+    margin-bottom: 2.5rem;
+}
+
+label{
+    color: rgb(76, 74, 74);
+}
+
+input[type="number"]{
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+    width: 50%;
+}
+input[type="submit"]{
+    color: rgb(255, 221, 3);
+    font-weight: 700;
+    padding: 10px 12px;
+    margin: 20px 0;
+    border: 3px solid rgb(255, 221, 3);
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(255, 221, 3);
+    color: black;
+}

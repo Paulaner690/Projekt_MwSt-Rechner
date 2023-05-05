@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Mehrwertsteuerrechner</title>
+</head>
+<body>
+    <div class="h1-background">
+        <h1>Mehrwertsteuer-Rechner</h1>
+    </div>
+    <article>
+        <form onsubmit="mehrwert(); return false">
+            <div id="wasBerechnen">
+                <p>Was soll berechnet werden?</p>
+                <input 
+                onchange="changeText()"
+                type="radio" name="bruttoNetto" id="nettoZuBrutto" value="nettoZuBrutto" checked>
+                <label for="nettoZuBrutto">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+
+                <input
+                onchange="changeText()"
+                type="radio" name="bruttoNetto" id="bruttoZuNetto" value="bruttoZuNetto">
+                <label for="bruttoZuNetto">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+            </div>
+
+            <div id="MwstSatz">
+                <p>Mehrwertsteuersatz</p>
+                <input type="radio" name="prozentsatz" value="19" checked>
+                <label for="neunzehn">19 %</label>
+                <input type="radio" name="prozentsatz" value="7">
+                <label for="sieben">7 %</label>
+            </div>
+
+            <div id="berechnung">
+                <p class="betrag">Nettobetrag (Preis ohne Mwst.) in Euro <span>*</span></p>
+                <input type="number" id="nettobetrag" step="0.01" placeholder="00,00">
+            </div>
+
+            <input type="submit" id="berechnen" value="BERECHNEN">
+        </form>
+        <hr>
+
+        <section>
+            <h3>Ergebnis</h3>
+            <div>
+                <h4>Mehrwertsteuerbetrag</h4>
+                <p class="output-mehrwert">0 €</p>
+            </div>
+
+            <hr>
+            <div>
+                <h4 class="outputTxt">Bruttobetrag (Endpreis)</h4>
+                <p class="outputEndpreis">0 €</p>
+            </div>
+        </section>
+    </article>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>
